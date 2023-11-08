@@ -1,0 +1,148 @@
+ERROR - 2023-10-26 16:05:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tugas', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\app\Controllers\Pages.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#9 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\app\Controllers\Pages.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#8 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO...')
+#11 {main}
+CRITICAL - 2023-10-26 16:05:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `relay`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Pages.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Downloads\\Compressed\\nurchim\\nurchim\\public\\index.php')
+ERROR - 2023-10-26 18:57:27 --> mysqli_sql_exception: Table 'web_smartplug.sensor' doesn't exist in C:\Users\LENOVO\Documents\CI4\smart Plug\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\LENOVO\Documents\CI4\smart Plug\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\LENOVO\Documents\CI4\smart Plug\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\LENOVO\Documents\CI4\smart Plug\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\LENOVO\Documents\CI4\smart Plug\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Documents\CI4\smart Plug\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Documents\CI4\smart Plug\system\BaseModel.php(563): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\Users\LENOVO\Documents\CI4\smart Plug\app\Controllers\Pages.php(20): CodeIgniter\BaseModel->find()
+#7 C:\Users\LENOVO\Documents\CI4\smart Plug\system\CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 C:\Users\LENOVO\Documents\CI4\smart Plug\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#9 C:\Users\LENOVO\Documents\CI4\smart Plug\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\LENOVO\Documents\CI4\smart Plug\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\LENOVO\Documents\CI4\smart Plug\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+CRITICAL - 2023-10-26 18:57:27 --> Table 'web_smartplug.sensor' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sensor`
+ORDER BY `id` DESC
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(false, null)
+ 4 APPPATH\Controllers\Pages.php(20): CodeIgniter\BaseModel->find()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')
+CRITICAL - 2023-10-26 19:12:29 --> Undefined array key "kelembapan"
+in APPPATH\Views\index.php on line 47.
+ 1 APPPATH\Views\index.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelembapan"', 'C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(22): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')
+CRITICAL - 2023-10-26 19:16:48 --> Undefined variable $s
+in APPPATH\Views\index.php on line 59.
+ 1 APPPATH\Views\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $s', 'C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(23): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')
+CRITICAL - 2023-10-26 19:17:07 --> Undefined variable $ls
+in APPPATH\Views\index.php on line 59.
+ 1 APPPATH\Views\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ls', 'C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php', 59)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(23): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')
+CRITICAL - 2023-10-26 19:17:14 --> Undefined array key "suhu"
+in APPPATH\Views\index.php on line 67.
+ 1 APPPATH\Views\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "suhu"', 'C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pages.php(23): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')
+CRITICAL - 2023-10-26 19:26:17 --> syntax error, unexpected end of file
+in APPPATH\Views\index.php on line 229.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Pages.php(23): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')
+CRITICAL - 2023-10-26 19:32:54 --> Attempt to read property "value" on array
+in APPPATH\Controllers\Pages.php on line 23.
+ 1 APPPATH\Controllers\Pages.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "value" on array', 'C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Controllers\\Pages.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')
+CRITICAL - 2023-10-26 19:33:20 --> Attempt to read property "watt" on array
+in APPPATH\Controllers\Pages.php on line 23.
+ 1 APPPATH\Controllers\Pages.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "watt" on array', 'C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\app\\Controllers\\Pages.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Documents\\CI4\\smart Plug\\public\\index.php')

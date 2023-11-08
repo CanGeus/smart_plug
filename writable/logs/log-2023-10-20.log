@@ -1,0 +1,61 @@
+ERROR - 2023-10-20 01:52:15 --> mysqli_sql_exception: Table 'tugas.realy' doesn't exist in C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\app\Controllers\Pages.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#9 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\LENOVO\Downloads\Compressed\nurchim\nurchim\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+CRITICAL - 2023-10-20 01:52:15 --> Table 'tugas.realy' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `realy`
+ORDER BY `id` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Pages.php(17): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Downloads\\Compressed\\nurchim\\nurchim\\public\\index.php')
+CRITICAL - 2023-10-20 01:55:18 --> Call to a member function format() on string
+in APPPATH\Views\index.php on line 220.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Pages.php(19): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Downloads\\Compressed\\nurchim\\nurchim\\public\\index.php')
+CRITICAL - 2023-10-20 01:55:41 --> Call to a member function date() on string
+in APPPATH\Views\index.php on line 220.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Pages.php(19): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Downloads\\Compressed\\nurchim\\nurchim\\public\\index.php')
+CRITICAL - 2023-10-20 01:55:51 --> Call to undefined function 2023-10-20 03:15:39()
+in APPPATH\Views\index.php on line 220.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Pages.php(19): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pages->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO\\Downloads\\Compressed\\nurchim\\nurchim\\public\\index.php')

@@ -1,0 +1,419 @@
+ERROR - 2023-10-30 05:37:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:37:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:41:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'appapimy_api '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:41:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:41:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'appapimy_api '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:41:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:42:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'appapimy_api '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:42:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:43:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'appapimy_api '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:43:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:43:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'appapimy_api '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:43:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:43:44 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:43:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:43:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:43:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:43:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root '@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#5 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#6 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-30 05:43:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 5 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 05:44:00 --> mysqli_sql_exception: Table 'appapimy_api.daya' doesn't exist in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/appapimy/public_html/system/BaseModel.php(563): CodeIgniter\Model->doFind()
+#6 /home/appapimy/public_html/app/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+#7 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Pages->index()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-30 05:44:00 --> Table 'appapimy_api.daya' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(563): CodeIgniter\Model->doFind()
+ 4 APPPATH/Controllers/Pages.php(18): CodeIgniter\BaseModel->find()
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-30 13:45:43 --> mysqli_sql_exception: Column 'watt' cannot be null in /home/appapimy/public_html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/appapimy/public_html/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/appapimy/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/appapimy/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/appapimy/public_html/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+#4 /home/appapimy/public_html/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/appapimy/public_html/system/BaseModel.php(788): CodeIgniter\Model->doInsert()
+#6 /home/appapimy/public_html/system/Model.php(715): CodeIgniter\BaseModel->insert()
+#7 /home/appapimy/public_html/app/Controllers/Sensor.php(24): CodeIgniter\Model->insert()
+#8 /home/appapimy/public_html/system/CodeIgniter.php(919): App\Controllers\Sensor->insertSensor()
+#9 /home/appapimy/public_html/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#10 /home/appapimy/public_html/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/appapimy/public_html/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-30 13:45:43 --> Column 'watt' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Sensor.php(24): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Sensor->insertSensor()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 13:02:00 --> syntax error, unexpected token ","
+in APPPATH/Controllers/Pages.php on line 33.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

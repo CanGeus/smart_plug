@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-03 15:31:22 --> Array to string conversion
+in APPPATH/Views/index.php on line 84.
+ 1 APPPATH/Views/index.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(226): include('/home/appapimy/public_html/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Pages.php(44): view()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Pages->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
